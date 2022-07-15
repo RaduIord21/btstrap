@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="h1">Lorem, ipsum.</div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col h1">Lorem, ipsum.</div>
+            <div class="col h4"> Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="row accordion">
+            <div class="col accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Despre Girafa
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nobis rem numquam minima
+                        autem neque, assumenda libero dignissimos atque, quae debitis. Veniam sit neque ea, at amet
+                        placeat! Sapiente dolores soluta, placeat suscipit, laboriosam eius nulla dolore eum natus rem
+                        iusto numquam, aut libero aliquam? Mollitia odit dolores beatae perferendis dolorum vel
+                        quibusdam exercitationem soluta, minus nulla laudantium in voluptas quisquam aliquid deserunt
+                        magni sit nam facere? Voluptas quisquam rem cum! Repudiandae voluptatem nisi eveniet alias
+                        incidunt illum voluptates a.
+                    </div>
+                </div>
+            </div>
+            <div class="col accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Despre Cal
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nobis rem numquam minima
+                        autem neque, assumenda libero dignissimos atque, quae debitis. Veniam sit neque ea, at amet
+                        placeat! Sapiente dolores soluta, placeat suscipit, laboriosam eius nulla dolore eum natus rem
+                        iusto numquam, aut libero aliquam? Mollitia odit dolores beatae perferendis dolorum vel
+                        quibusdam exercitationem soluta, minus nulla laudantium in voluptas quisquam aliquid deserunt
+                        magni sit nam facere? Voluptas quisquam rem cum! Repudiandae voluptatem nisi eveniet alias
+                        incidunt illum voluptates a.
+                    </div>
+                </div>
+            </div>
+            <div class="col accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Despre Sconcs
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nobis rem numquam minima
+                        autem neque, assumenda libero dignissimos atque, quae debitis. Veniam sit neque ea, at amet
+                        placeat! Sapiente dolores soluta, placeat suscipit, laboriosam eius nulla dolore eum natus rem
+                        iusto numquam, aut libero aliquam? Mollitia odit dolores beatae perferendis dolorum vel
+                        quibusdam exercitationem soluta, minus nulla laudantium in voluptas quisquam aliquid deserunt
+                        magni sit nam facere? Voluptas quisquam rem cum! Repudiandae voluptatem nisi eveniet alias
+                        incidunt illum voluptates a.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col card" style="background-color:#ffc400;">
+                <img src="giraffe.png" class="card-img-top" alt="missing">
+                <div class="card-body">
+                    <h5 class="card-title">Alege Girafa</h5>
+                    <p class="card-text">Are inaltime mare, deci ajunge oriunde</p>
+                    <a href="#" class="btn btn-primary">Pick</a>
+                </div>
+            </div>
+            <div class="col card" style="background-color:#9c6500;">
+                <img src="horse.png" class="card-img-top" alt="missing">
+                <div class="card-body">
+                    <h5 class="card-title">Alege Calul</h5>
+                    <p class="card-text">Are viteza, deci nu il prinde nimeni</p>
+                    <a href="#" class="btn btn-primary">Pick</a>
+                </div>
+            </div>
+            <div class="col card" style="background-color:grey;">
+                <img src="skunk.png" class="card-img-top" alt="missing">
+                <div class="card-body">
+                    <h5 class="card-title">Alege Sconcsul</h5>
+                    <p class="card-text">Miroase oribil, deci alunga orice</p>
+                    <a href="#" class="btn btn-primary">Pcik</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
